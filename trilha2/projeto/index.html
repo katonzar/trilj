@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Tech</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="shortcut icon" href="img/logo.ico">
+        <script language="javascript" src="./funcao.js"> </script>
+    </head>    
+
+    <body>
+      
+         <div class="home">
+            <a class="home" href="index.html">Home</a>
+            <a class="paciente" target="_blank" href="pacientes.html">Prontuário</a>
+        </div>
+
+    <div class="container">
+            <div class="carrossel">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+
+
+            <div class="slide s1"><img src="./img/foto1.jpg" alt="foto1"></div>
+            <div class="slide"><img src="./img/foto2.jpg" alt="foto2"></div>
+            <div class="slide"><img src="./img/foto3.jpg" alt="foto3"></div>
+            <div class="slide"> <img src="./img/foto4.jpg" alt="foto4"></div>
+        </div>
+            <div class="navegação">
+                <label class="barra" for="slide1"></label>
+                <label class="barra" for="slide2"></label>
+                <label class="barra" for="slide3"></label>
+                <label class="barra" for="slide4"></label>
+            </div>
+        </div>
+    </div>
+
+        <h1> Health Tech</h1>
+        <p>Auxílio no atendimento dos pacientes em uso de polifarmácia.</p>
+        <h1><MENU></MENU></h1>
+        <br></br>
+
+        <div class="menu">
+            <h2> Cuidados com as prescrições múltiplas</h2>
+            <br /><br />
+        </div>
+
+        <div class="card">
+            <iframe class="video" src="https://www.youtube.com/embed/qYKy6zcYPDE"
+            title="Manejo de polifarmácia e desprescrição." frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8253070238247!2d-48.800606284445756!3d-22.322445622893913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf5429f19e26ef%3A0x6bb9d41c7ac95fd2!2sR.%20Jos%C3%A9%20Leandrin%20-%20Pederneiras%2C%20SP%2C%2017280-000!5e0!3m2!1spt-BR!2sbr!4v1680568611731!5m2!1spt-BR!2sbr"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+
+          
+
+            <p>Saiba Mais à respeito do <a href="https://diibrasil.org.br/entenda-o-que-e-a-polifarmacia/" target="_blank"> Uso
+                    da polifarmácia </a></p>
+
+
+        <footer>Criado por Karina de Almeida Tonzar</footer>
+
+    </body>
+
+<style>
+
+   
+/*cor das letras e cor do fundo*/
+body{
+    margin: 0;
+    background-color: hsl(202, 64%, 67%);
+}
+/*cabeçalho*/
+.home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px; 
+}
+
+
+/*carrossel*/
+.carrossel {
+    height: 520px;
+    width: 935px ;
+    border-radius: 20px;
+    background: linear-gradient(72deg);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+.navegação {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    transform: translate (-50%);
+    display: flex;
+}
+.barra {
+    width: 70px;
+    height: 17px;
+    margin: 6px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s; 
+    opacity: 0.8;
+    
+}
+.barra:hover {
+    background:lightgreen;
+	transform: scale(1.1);
+}
+
+input {
+    display: none;
+}
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+/*Botão de acesso ao prontuário do paciente*/
+.paciente {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     width: 2000px;
+    size: 500px;
+}
+
+/*título e sub título*/
+ h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+ h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 100px;
+ } 
+
+ menu {
+    background-image: url('img/plano-de-saude-para-idosos-5-dicas-importantes-20190704120123.jpg');
+    text-align: center;
+    box-shadow: inset 10px 30px 13px 30px rgb(209, 203, 218);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1500px;
+   
+    
+
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgba(69, 221, 69, 0.555);
+    border-radius: 30px;
+
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    outline-width: 50px;
+    outline-style: double;
+    outline-color: rgb(37, 70, 37);
+
+    margin: auto;
+    margin-top: 900px;
+}
+ /*ícone SAIBA MAIS*/
+ p {
+    font-size: 20px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.mapa {
+    margin-left: 100px;
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 4px 0 rgba(126, 26, 165, 0.2);
+    transition: 0.3s;
+
+    height: 500px;
+    width: 1000px;
+    left: 400px;
+    margin-top: 20px;
+
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgba(26, 29, 27, 0.555);
+    border-radius: 30px;
+
+    
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgba(26, 26, 141, 0.555);
+    border-radius: 30px;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    position: sticky;
+}
+.video {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    left: -500px;
+    margin-left: 500px;
+    width: 1000px;
+    height: 500px;
+    
+}
+
+
+@media screen and (max-width: 768px){
+body {
+    width: 450px;
+    text-align: center;
+    background-color: rgb(225, 0, 255);
+}
+.carrossel {
+width: 450px;
+}
+menu {
+width: 500px;
+image-resolution: 100%;
+height: 300px;
+margin-left: 90px;
+}
+.card {
+width: 450px;
+margin-left: 90px;
+}
+.video {
+    width: 450px;
+}
+}
+
+
+
+@media screen and (max-width: 375px){
+body {
+    width: 450px;
+    text-align: center;
+    background-color: rgb(255, 0, 8)
+}
+h1 {
+    text-align: center;
+    margin-left: 170px;
+}
+p {
+    margin-left: 170px; 
+}
+.carrossel {
+width: 450px;
+margin-top: 250px;
+margin-left: 170px;
+
+}
+menu {
+width: 400px;
+height: 300px;
+image-resolution: 100%;
+margin-left:10px;
+
+}
+.card {
+width: 450px;
+margin-left: 170px;
+
+}
+.video {
+    width: 450px;
+    
+}
+}
+
+/*Assinatura do site*/
+footer {
+    color: black;
+}
+</style>
+</html>
